@@ -16,8 +16,6 @@
 .bottomNav{
     width: 100vw;
     height: 8vh;
-
-    background-color: aquamarine;
 }
 
 #mainLogo{
@@ -63,8 +61,66 @@
 
 .profile-user-info{
     margin-left: 5px;
-    padding-top: 21px;
+    padding-top: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 20px;
+}
+
+.nav-content-1{
+    float: left;
+    height: 100%;
+    width: 15vw;
+
+    cursor: pointer;
+
+    margin-left: 15vw;
+
+    background-image: url(../images/아이콘/아이콘_첫화면\(색\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-content-2{
+    float: left;
+    height: 100%;
+    width: 15vw;
+
+    margin-left: 2.5vw;
+
+    background-image: url(../images/아이콘/아이콘_활동량.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-content-3{
+    float: left;
+    height: 100%;
+    width: 15vw;
+
+    margin-left: 2.5vw;
+
+    cursor: pointer;
+
+    background-image: url(../images/아이콘/아이콘_위치추적.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-content-4{
+    float: left;
+    height: 100%;
+    width: 15vw;
+
+    margin-left: 2.5vw;
+
+    cursor: pointer;
+    
+    background-image: url(../images/아이콘/아이콘_계정.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
