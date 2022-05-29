@@ -101,3 +101,54 @@
     font-size: 20px;
     color: white;
 }
+
+.activity-time-result-area{
+    width: 80vw;
+    height: 17vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 2vh;
+
+    border-radius: 25px;
+
+    box-shadow: 3px 3px 3px 3px gray;
+
+    background-color: rgb(253, 253, 253);
+}
+
+#activity-result-title{
+    width: 100%;
+    height: 15%;
+    margin-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+    color: black;
+}
+
+#activity-result-main{
+    width: 100%;
+    height: 40%;
+    margin-top: 5%;
+}
+
+#activity-original-result{
+    float: left;
+    margin-left: 15px;
+}
+
+#activity-objective-result{
+    float: left;
+    margin-left: 2vw;
+}
+
+#activity-calorie-result{
+    width: 100%;
+    height: 10%;
+    margin-left: 15px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: black;
+}
