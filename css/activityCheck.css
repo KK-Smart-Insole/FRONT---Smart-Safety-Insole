@@ -60,7 +60,7 @@
 
 .walk-count-area{
     width: 80vw;
-    height: 20vh;
+    height: 23vh;
     margin-left: 10vw;
     margin-right: 10vw;
     margin-top: 4vh;
@@ -83,10 +83,21 @@
 
 #walk-count-circle{
     width: 100%;
-    height: 80%;
+    height: 70%;
 }
 
 .clearfix{
     margin-top: 10px;
     margin-left: 30%;
+}
+
+#walk-count-result{
+    width: 100%;
+    height: 10%;
+    margin-left: 25%;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
 }
