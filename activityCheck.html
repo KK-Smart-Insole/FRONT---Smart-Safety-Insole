@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./css/basicSetting.css">
     <link rel="stylesheet" href="./css/activityCheck.css">
+    <link rel="stylesheet" href="./css/css-circle/css/circle.css">
     <title>깔창깔조</title>
 </head>
 <body>
@@ -28,7 +29,19 @@
     </div>
     <div class="mainScreen">
         <div class="walk-count-area">
-
+            <div id="walk-count-title">걸음수</div>
+            <div id="walk-count-circle">
+                <div class="clearfix">   
+                    <div class="c100 p25">
+                        <span>25%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="walk-count-result"></div>
         </div>
     </div>
     <div class="bottomNav">
