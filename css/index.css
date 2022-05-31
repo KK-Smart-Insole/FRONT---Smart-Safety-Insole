@@ -1,3 +1,10 @@
+.mainScreen{
+    background-image: url(../images/andaAdvertisement.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .nav-content-1{
     float: left;
     height: 100%;
