@@ -57,8 +57,9 @@
                1425 칼로리 소모
             </div>
         </div>
-
-        <canvas id="myChart" style="height: 8vh; width:15vh; max-width:700px"></canvas>
+        <div class="activity-bar-plot-area">
+            <canvas id="myChart" style="height: 80%; margin-top: 2px;"></canvas>
+        </div>
     </div>
     <div class="bottomNav">
         <div class="nav-content-1">
@@ -70,34 +71,24 @@
     </div>
 </body>
 <script>
-var xyValues = [
-  {x:50, y:7},
-  {x:60, y:8},
-  {x:70, y:8},
-  {x:80, y:9},
-  {x:90, y:9},
-  {x:100, y:9},
-  {x:110, y:10},
-  {x:120, y:11},
-  {x:130, y:14},
-  {x:140, y:14},
-  {x:150, y:15}
-];
+var xValues = ["5/27", "5/28", "5/29", "5/30", "5/31", "6/1", "6/2"];
+var yValues = [750, 1250, 5670, 860, 7454, 10034, 4567];
+var barColors = ["gray", "gray", "gray", "gray", "gray", "gray", "orange"];
 
 new Chart("myChart", {
-  type: "scatter",
+  type: "bar",
   data: {
+    labels: xValues,
     datasets: [{
-      pointRadius: 4,
-      pointBackgroundColor: "rgb(0,0,255)",
-      data: xyValues
+      backgroundColor: barColors,
+      data: yValues
     }]
   },
   options: {
     legend: {display: false},
-    scales: {
-      xAxes: [{ticks: {min: 40, max:160}}],
-      yAxes: [{ticks: {min: 6, max:16}}],
+    title: {
+      display: true,
+      text: "깔창깔조님의 일간 걸음"
     }
   }
 });
