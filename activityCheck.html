@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/basicSetting.css">
     <link rel="stylesheet" href="./css/activityCheck.css">
     <link rel="stylesheet" href="./css/css-circle/css/circle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <title>깔창깔조</title>
 </head>
 <body>
@@ -56,6 +57,9 @@
                1425 칼로리 소모
             </div>
         </div>
+        <div class="activity-bar-plot-area">
+            <canvas id="myChart" style="height: 80%; margin-top: 2px;"></canvas>
+        </div>
     </div>
     <div class="bottomNav">
         <div class="nav-content-1">
@@ -66,4 +70,27 @@
         <div class="nav-content-4"></div>
     </div>
 </body>
+<script>
+var xValues = ["5/27", "5/28", "5/29", "5/30", "5/31", "6/1", "6/2"];
+var yValues = [750, 1250, 5670, 860, 7454, 10034, 4567];
+var barColors = ["gray", "gray", "gray", "gray", "gray", "gray", "orange"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "깔창깔조님의 일간 걸음"
+    }
+  }
+});
+</script>
 </html>
