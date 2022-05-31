@@ -152,3 +152,17 @@
     font-size: 20px;
     color: black;
 }
+
+.activity-bar-plot-area{
+    width: 80vw;
+    height: 20vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 2vh;
+
+    border-radius: 25px;
+
+    box-shadow: 3px 3px 3px 3px gray;
+
+    background-color: rgb(253, 253, 253);
+}
