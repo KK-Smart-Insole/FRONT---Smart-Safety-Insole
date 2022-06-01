@@ -2,6 +2,7 @@ var date = new Date();
 var today = String(date.getFullYear()) + '-0' + String(date.getMonth()+1) + '-0' + String(date.getDay()-3)
 
 var walkCount=0;
+var activityMinuteCount = 0;
 
 console.log(date.getFullYear());
 console.log(today);
@@ -19,6 +20,7 @@ async function request() {
   {
     if(resultData.result[i].createdAt.substr(0,10) == today){
       walkCount += resultData.result[i].walkCount;
+      activityMinuteCount += 1;
     }
   }
   //그래프 만들기
@@ -56,11 +58,10 @@ async function request() {
     }
   });
 
-
-
-
-
-  console.log(walkCount);
+  //활동시간 표시하기
+  document.getElementById("get-daily-activity-minute").innerHTML = activityMinuteCount;
+  //사용 칼로리 표시하기
+  document.getElementById("activity-calorie-result").innerHTML = 0.03 * walkCount + ' 칼로리 소모';
 }
 
 request();
